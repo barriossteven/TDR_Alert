@@ -1,4 +1,4 @@
-# TDR_Alert
+# TDR_Alert_Runspaces
 ## .SYNOPSIS
 Small utility to detect specific event ID in all active virtual machines in Citrix XenDesktop environment. Utility leverages multithreaded runspaces to minimize execution time.
 
@@ -25,7 +25,7 @@ VirtualMachine_132 | Domain\Username_01 | Hypervisor_234
 VirtualMachine_043 | Domain\Username_04 | Hypervisor_234
 VirtualMachine_031 | Domain\Username_06 | Hypervisor_234
 
-## .Accomplishments/What I learned
+## .ACCOMPLISHMENTS/WHAT I LEARNED
 Although this script was intended to benefit the environment from a business continuty point, the technical benefit of this was learning to optimize powershell scripts using runspaces.
 
 Native powershell runspaces for threading tasks can be cumbersome and not provide streamline methods of customization. PoshRSJOB is a wrapper to the native runspaces framework and provides an intutive method of tweaking attributes such as the timeout limit for each thread, throttle number of parallel threads, and easily pass in functions/modules/snapins to each runspace that gets created.
@@ -34,7 +34,7 @@ Without runspaces, scanning of 1600 virtual machines by iterating through the li
 
 Implementing the utlility using runspaces brought the total run time to less than 10 seconds. Server resources are not  heavily impacted as well. Hosting server had 4 CPU cores + 8 GB of RAM. Resource utilization barely increased at runtime.
 
-## .Areas for Improvement
+## .AREAS OF IMPROVEMENT
 Areas of improvement would be dynamically passing an event ID in to each runspace. This would help anyone running the script dynamically input their targetted iD. Additionally, packing this script and adding parameter input would allow for anyone to pass parameters via terminal.
 
 ## .NOTES
