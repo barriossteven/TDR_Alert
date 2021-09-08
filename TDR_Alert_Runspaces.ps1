@@ -2,9 +2,9 @@
 
 $Var_EmailStyleSheet = Get-Content "$PSScriptRoot\Email_Style.txt"
 $Var_IntRelay = "EmailRelay"
-$Var_Controllers = @("CitrixController)
+$Var_Controllers = @("CitrixController")
 $Var_Sender = "EmailSender"
-$Var_Recipients = @("EmailRecipients)
+$Var_Recipients = @("EmailRecipients")
 
 $Date = $(Get-Date -Format 'yyyy-MM-dd_HH_mm')
 $LogFileRoot = "$PSScriptRoot\$Date"
