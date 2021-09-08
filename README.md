@@ -35,7 +35,7 @@ Without runspaces, scanning of 1600 virtual machines by iterating through the li
 Implementing the utlility using runspaces brought the total run time to less than 10 seconds. Server resources are not  heavily impacted as well. Hosting server had 4 CPU cores + 8 GB of RAM. Resource utilization barely increased at runtime.
 
 ## .AREAS OF IMPROVEMENT
-Areas of improvement would be dynamically passing an event ID in to each runspace. This would help anyone running the script dynamically input their targetted iD. Additionally, packing this script and adding parameter input would allow for anyone to pass parameters via terminal.
+Areas of improvement would be dynamically passing an event ID in to each runspace. This would help anyone running the script dynamically input their targetted iD. Additionally, packaging this script and adding parameter input would allow for anyone to pass parameters via terminal.
 
 ## .NOTES
 Script was created using Powershell 5.1. 
