@@ -1,6 +1,6 @@
 ﻿cls
 
-$Var_EmailStyleSheet = Get-Content "C:\scripts\Email_Style.txt"
+$Var_EmailStyleSheet = Get-Content "$PSScriptRoot\Email_Style.txt"
 $Var_IntRelay = "EmailRelay"
 $Var_Controllers = @("CitrixController)
 $Var_Sender = "EmailSender"
